@@ -14,7 +14,6 @@
 body {
   font-family: sans-serif;
   font-family: 'Lato';
-  color: #fff;
 }
 
 h1 {
@@ -24,12 +23,12 @@ h1 {
 }
 
 h2 {
-  font-size: 36px;
-  margin: 0px auto 30px;
+  font-size: 28px;
+  margin: 20px auto 10px;
 }
 
 h3 {
-  margin: 0px auto 30px;
+  margin: 0px auto 10px;
 }
 
 h4 {
@@ -37,38 +36,113 @@ h4 {
   font-weight: 200;
 }
 
+header h4 {
+  display: inline-block;
+  font-size: 21px;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title {
+  font-size: 100px;
+  text-transform: uppercase;
+  font-weight: 200;
+  color: #fff;
+}
+
+.valignMiddle {
+  position: relative;
+  top: 50%; 
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
 .hero {
-  background-image: url(img/uno.jpg);
-  height: 500px;
+  height: 400px;
+  background-size: cover;
+  text-align: center;
+  text-shadow: 1px 1px 25px #000;
+}
+
+.hero .container {
+  height: 100%;
 }
 
 .whiteStyle {
-  padding: 60px 30px;
+  padding: 60px 0px 30px;
 }
 
 .greyStyle {
-  background-color: #313D42;
-  padding: 5px 20px;
+  background-color: #000;
+  padding: 5px 0px;
 }
 
 li {
   display: inline-block;
+  padding: 18px 10px;
+  cursor: pointer;
 }
 
 ul {
   float: right;
+  color: #fff
+}
+
+button {
+  margin: 20px 0px;
+  padding: 15px 20px;
+  color: #fff;
+  background-color: #FF4200;
+  font-size: 14px;
+  letter-spacing: .5px;
+  border:none;
+}
+
+.whiteStyle img {
+  height: 200px;
+}
+
+.cover img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.borderCol {
+  border: 1px dotted #555;
+}
+
+.box-text {
+  margin: 15px 30px;
+}
+
+footer {
+  text-align: center;
+  color: #fff;
+  margin-top: 30px; 
+}
+
+footer p {
+  padding: 40px;
 }
 
 /* Grid HTML Classes */
+.container {
+  max-width: 1920px;
+  width: 90%;
+}
 
 .row {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
   margin-bottom: 0px;
-  max-width: 80em;
-  width: 100%;
+  max-width: 1200px;
+  width: 100%;  
 }
+
 .row:after {
   content: "";
   display: table;
@@ -105,14 +179,19 @@ ul {
 
 .column,
 .columns {
-  padding-left: 0.75em;
-  padding-right: 0.75em;
+  padding-left: 1em;
+  padding-right: 1em;
   width: 100%;
   float: left;
   position: relative;
 }
 
 @media only screen {
+
+  .hero {
+    background-image: url(img/movement.jpg);
+  }
+
   .small-1 {
     width: 8.33333%;
   }
@@ -220,7 +299,12 @@ ul {
     float: none !important;
   }
 }
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 600px) {
+
+  .hero {
+    background-image: url(img/1974-50_sin-titulo.jpg);
+  }
+
   .medium-1 {
     width: 8.33333%;
   }
@@ -441,7 +525,12 @@ ul {
     float: left !important;
   }
 }
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 900px) {
+
+  .hero {
+    background-image: url(img/blu-di-cielo.jpg);
+  }
+
   .large-1 {
     width: 8.33333%;
   }
