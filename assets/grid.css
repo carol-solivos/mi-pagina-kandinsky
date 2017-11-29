@@ -58,6 +58,7 @@
 
 @media only screen {
 
+/*Estilos del banner, texto destacado y nav*/
   .hero {
     background-image: url(img/movement.jpg);
   }
@@ -187,6 +188,8 @@
   }
 }
 @media only screen and (min-width: 600px) {
+
+  /*Estilos del banner, texto destacado y nav*/
 
   .hero {
     background-image: url(img/1974-50_sin-titulo.jpg);
@@ -429,6 +432,8 @@
   }
 }
 @media only screen and (min-width: 900px) {
+
+  /*Estilos del banner, texto destacado y nav*/
 
   .hero {
     background-image: url(img/blu-di-cielo.jpg);
